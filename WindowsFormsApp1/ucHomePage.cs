@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class ucHomePage : UserControl
     {
-        public Form1()
+        public ucHomePage()
         {
             InitializeComponent();
+        }
+
+        private void ucHomePage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
