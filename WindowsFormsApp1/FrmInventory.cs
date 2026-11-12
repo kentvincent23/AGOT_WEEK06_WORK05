@@ -42,5 +42,21 @@ namespace WindowsFormsApp1
         {
             ShowPage(new ucProductListing());
         }
+
+        private void pnl_content_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult userResponse = MessageBox.Show("Are you about to exit?",
+                "Exit Confirmation?",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if (userResponse == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
